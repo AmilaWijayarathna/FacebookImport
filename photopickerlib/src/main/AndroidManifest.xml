@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.axis.photopicker">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        >
+
+        <activity android:name="com.axis.photopicker.facebook.FbAlbumView"
+            android:label="Photo Picker"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity android:name="com.axis.photopicker.ImportActivity"
+            android:label="Photo Picker"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="flickrj-android-sample-oauth" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.axis.photopicker.gallery.GalleryAlbumView"
+            android:label="Photo Picker"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity android:name="com.axis.photopicker.instagram.InstaImportActivity"
+            android:label="Photo Picker"
+            android:theme="@style/AppTheme.NoActionBar"
+             ></activity>
+
+
+
+    </application>
+
+</manifest>

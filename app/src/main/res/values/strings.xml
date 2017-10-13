@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Facebook Import</string>
+    <string name="facebook_app_id">129499664373466</string>
+    <string name="activity_title">Facebook Albums</string>
+    <string name="photos">Photos</string>
+    <string name="photo">Photo</string>
+    <string name="title_facebook_photo_picker">Facebook Photo Picker</string>
+
+
+    <string name="title_facebook_alert_dialog">Facebook Error</string>
+    <string name="message_facebook_alert_dialog">There was a problem loading your Facebook photos:\n%1$s</string>
+
+    <string name="button_text_retry">Retry</string>
+    <string name="button_text_cancel">Cancel</string>
+</resources>

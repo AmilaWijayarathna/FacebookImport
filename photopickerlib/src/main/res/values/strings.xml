@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Photo Picker</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name= "facebook_app_id">397270670383332</string>
+
+
+    <string name="error">An error occured</string>
+    <string name="login_txt">Connect with </string>
+    <string name="msg_1">Please try again</string>
+    <string name="msg_2">Log in to </string>
+    <string name="facebook">Facebook</string>
+    <string name="intagram">Instagram</string>
+    <string name="flicker">Flickr</string>
+    <string name="picasa">Picasa</string>
+</resources>

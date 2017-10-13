@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/grid_photos"
+            android:layout_gravity="center_horizontal"
+            android:numColumns="3"
+            android:layout_above="@+id/linearLayout" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#434343"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout"></LinearLayout>
+
+        <com.axis.photopicker.utils.SlidingLayer
+            android:id="@+id/slidingLayer1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true"
+            android:elevation="2dp"
+            app:offsetWidth="40dp"
+            app:closeOnTapEnabled="true"
+            app:openOnTapEnabled="true"
+            app:shadowWidth="0dp"
+
+
+            >
+            <!--slidingLayer:shadowDrawable="@drawable/sidebar_shadow"
+            slidingLayer:shadowSize="@dimen/shadow_size"
+            slidingLayer:offsetDistance="@dimen/offset_distance"
+            slidingLayer:previewOffsetDistance="@dimen/preview_offset_distance"
+            slidingLayer:stickTo="top|bottom|right|left"
+            slidingLayer:changeStateOnTap="true">-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_clear"
+                        android:src="@drawable/im_pp_clear"
+                        android:layout_alignParentLeft="true"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_rounded_red"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_done"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/im_pp_ok"
+                        android:layout_gravity="end"
+                        android:background="@drawable/btn_rounded_blue"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="No images Selected"
+                        android:id="@+id/tv_message"
+                        android:textColor="@color/pp_unselected"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/grid_selected"
+                    android:layout_gravity="center_horizontal"
+                    android:numColumns="5"
+                    android:layout_above="@+id/linearLayout" />
+            </LinearLayout>
+
+        </com.axis.photopicker.utils.SlidingLayer>
+    </RelativeLayout>
+
+</LinearLayout>

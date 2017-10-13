@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="240dp"
+    android:layout_height="180dp"
+    android:background="#fff"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/im_logo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/im_pp_insta_logo"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:tint="@color/colorAccent"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/im_profile"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/im_pp_profile"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Axis User"
+        android:id="@+id/tv_username"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="Log out"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_rounded_red"
+        android:id="@+id/btn_logout"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

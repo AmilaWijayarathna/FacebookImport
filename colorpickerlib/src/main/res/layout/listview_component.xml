@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/themeTableMarginLeft">
+        <TableRow
+            android:padding="@dimen/themeTablePadding">
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/category"
+                android:layout_width="@dimen/themeNameWidth"
+                android:layout_height="fill_parent"
+                android:textSize="@dimen/themeTxtSize"
+                android:textStyle="bold"
+                android:gravity="center_vertical">
+            </TextView>
+
+            <ImageView
+                android:layout_marginLeft="@dimen/themeTablePadding"
+                android:id="@+id/color1"
+                android:onClick="clickColor"
+                android:layout_column="1" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/themeTablePadding"
+                android:id="@+id/color2"
+                android:layout_column="2" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/themeTablePadding"
+                android:id="@+id/color3"
+                android:layout_column="3" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/themeTablePadding"
+                android:id="@+id/color4"
+                android:layout_column="4" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/themeTablePadding"
+                android:id="@+id/color5"
+                android:layout_column="5" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
